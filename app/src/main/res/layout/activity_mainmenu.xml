@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".mainmenu">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Welcome to the Main Menu"
+       android:textSize="30dp"
+       android:textStyle="italic"
+       android:textColor="#EF0E0E"
+       android:background="@color/teal_200"
+    android:id="@+id/mainmenu"
+
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Your Category"
+        android:layout_marginTop="70dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:background="@color/white"
+        android:id="@+id/category"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kids"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:background="@color/white"
+        android:id="@+id/kids"
+        android:layout_below="@id/category"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Boys"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:background="@color/white"
+        android:id="@+id/boy"
+
+        android:layout_below="@id/kids"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Back"
+        android:textSize="30dp"
+        android:onClick="openMainActivity"
+        android:layout_below="@id/boy"
+        />
+
+
+
+</RelativeLayout>

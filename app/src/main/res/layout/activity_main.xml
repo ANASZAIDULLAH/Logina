@@ -1,67 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/garments"
-    tools:context=".MainActivity"
-    >
-
-
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
     <ImageView
-        android:id="@+id/image"
+        android:layout_width="122dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/angel" />
+
+    <TextView
+        android:id="@+id/tv_login"
         android:layout_width="match_parent"
-        android:layout_height="102dp"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Login Here"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/_username"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/sign" />
+        android:textColorHint="black"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textColorHint="black"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_username"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Login"
+        android:onClick="openmainmenu"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/_submit"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Register Here"
+        android:onClick="opensignup"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/text"
-        android:textSize="50sp"
-        android:layout_below="@id/image"
-        android:textStyle="italic"
-        android:textColor="#090909"
+        android:layout_marginTop="180dp"
         android:textAlignment="center"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text"
-        android:hint="Enter Username"
-        android:background="#E6EDED"
-        android:id="@+id/Username"
-        />
+        android:text="Copyrights &#169; JTech Pvt Ltd, Lahore"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Your Password"
-        android:layout_below="@id/Username"
-        android:background="@color/white"
-        android:id="@+id/Password"
-        />
-
-    <Button
-        android:id="@+id/Login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Password"
-        android:hint="Login"
-        android:textSize="25dp"
-        android:textStyle="bold" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Not Login / Register Here"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:layout_below="@+id/Login"
-        />
-
-
-</RelativeLayout>
+</LinearLayout>
